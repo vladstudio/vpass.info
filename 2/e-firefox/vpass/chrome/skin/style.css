@@ -1,0 +1,4 @@
+#vPass_button {
+  list-style-image: url("chrome://vPass/skin/icon-16.png");
+  -moz-box-orient: horizontal;
+}

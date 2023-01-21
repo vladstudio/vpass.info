@@ -1,0 +1,23 @@
+<html manifest="https://www.vpass.info/2/vpass.appcache">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=280px, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<title>vPass - a smart web-based generator of secure passwords.</title>
+
+		<!-- 57x57 icon -->
+		<link rel="apple-touch-icon-precomposed" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAMAAAC7xnO3AAABelBMVEXphw7phw7cbAvcbQzUWAjTWAnTWQnUWAjlhA6yLAOyKwKwKwK9NwTdaArBOgXEQAXqjhDicgvnfA24MgPUWgnISwYAAAC8YT6kNwPFQQXJTwbCSgbLSQfm5+Lk5eHIRQa1LwPTVgjOTQbOTgbQUgfx8u3z9O/OVwfy8u/v8Ovw8OzKmIbQe1Ts7OjVYQrt7um8SgbVWgjMUwfGUwjdbQ3ZYgrZqZPUWQjWWwjRWgju7+rq4drm3db19fKwRAbGUAfLVwjq6+b29/Tk1c7Zr5zhzMLheQ7s5N/ETga3RwbTVwjjpob5+ffir5fcbA3Wuq/OoI/ewLO+WijRimjOppjNSwbHi3TYXwnZcCzXXQnZZQvOTQjYYAnu2s7qjxDZZArSVQjUdULWq5rSVAjRUwfo6eTch1jQUgivPwXPUAfQUAfQUQe/cVPPTwfUWAjGYyrAZ0DTaCqzUinTlXi9fmjaZQvaZgvbaQzcaw3rkRHbag3bagzbaAzaZwzOvIm+AAAAF3RSTlPQ0vHxhtLQgviEU9H+U9H2+FOE8vkUABvSEYAAAAPUSURBVHhepI7VbiQ9EEa9nJtISbSTN7DdzAzDzBRm5mX48d233D1RZm+SyeyxZNdXrtNutLq6mll5sbT/96zsL6GVDFhgLi8sVC2rO8NKN6u6sLDMzMVq1eo+D6taXVxFmZfV7vOpvsqgd1b3r+fTtV6jt9Y/82C9Qe+tf+fBeo/cn/Ph/on533y4qPn/fDRR88cMbLf2gNb2Q2dWU+kUgY4y1Wqiw+8zoHxl5kiZah2iw+0ZUEbFOAZzqgXmwQwoEjM/KlOtp83WJjPNGDBZ3mwdTcwT++CRZZ8X22Hn3M7HhIR5+7yz126PbCacoFP7MZSvhMTFNjeoEVIbcO0ifMFRmHCKLnZ3d+3dB+zfsu5wDBKTdGM4Pru5AJN5yl6xDXSU1LOVTpuxRwcxQAhHMOEwISxVwLQTk+E7BGPMlaCZ5hIHmThmf9wrlaIiwSwWo1KpMu5P3rxJzWHMCeAeTcwjqAUuHuZNrZHNXvYFzFb/MpttaGZi3qDrDcaW2eN4XsDOVhodDInrmZ7vU5ofEdDAJFI+T309mblGVxsJ+XUweRz6SfJLGBK3nk/SZxnz3CCELfwMMeUK3W0xNnwtFIIg4KUkSgIfBDjUfBb0Cg4C7pvIQavibU24Qztp4Zl9QVVVocyG/TLP6r7J5jwHByofNhohrwbYuVd3wPSSRT8JqqwGEYVZGgUymJ9Y7UmBqspYzOVEDJ8LJC+dB9NL8euVQJZlVYIgqVAFlboLtW6KNYLPGpRqEeYE0dRTYQetQcWCbog8M8u+55dVuSALogEXum5ol2JtnHPdnCiMv2jGZH4NrcGZLDqsyYWCHFH4WVbUhtRjqk9zjSyrqfalUaduOq2zNye49Z5aAENyJblwVlB7dff+hhrGh+SgcEyAN917jFu1cHZWODaO2aHeGu5jTJtUi2RQKvUKmHKkHT5h/iq9fnobBMEADnPVNu3BqAMF5tarifELNMxL66Ue2l56IQFjXbNm3//veDdHux1cZA8B4mt+H4D0+q1eNzk16btoaZs36/o6JkVpbZVx3lIqGkFNGZf1qB+lLHYQVeYQu0L+WWY35CgYowYTR5KNglJmw5JZuWUtAy3bltnXtLb/b9+wobxRyV4wIPaJkqOgVHdIPJQxUXek3TcccaXNrSWcqiuqF1AVnRnZpey2E2lKba203pwfwHkzjLrft50NpdWTBJBejxnKlZt/lRc3pnx1csEI9264c4nR8vTm4rREi9SpTBfIw88usIfCgDuEPAhR5M/501R87sPbwQ8wP0zIDhwHfgRlFHqzxwmCmRea6gNwMdeYe9oX+AAAAABJRU5ErkJggg==" />
+
+		<!-- 32x32 icon -->
+		<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAwFBMVEXDPgW6NASuKAK2MAPTWQnogA3idw3UWgrqjA4AAADJTQbNVAfatqfCTAbo5uLv8Oz29/Ts6+fVXAjTWAjTVgjz8+/PVwjJUgfLSQbgdw7frJPHRAXWlHa6VijBf2fUWgjYXwnOo5O8SQbn3tjOTQbHUgfQTwfYYgrJTgbagVLSUwe/ZkDKlIHcbA3u1svbaQzaxLvgysHOfFbQUgfZZArZj2mvPwXm0smjNwPQZSnaZgvbag3baAy1LwPrkQ/OTgZxH5cEAAAAC3RSTlP0s7b09LTztPQALIFnKooAAAGbSURBVHhejc7VcttAGIbhTRyylknMaGRIUrz/u+of1dMDg6bvyX7SPqMRGjvPb7/u9PbsjJHzEgTLOwXBi4Neg+8DBa/oabkeaPmE9PrHQGuN9LfBNDI3wOG4WoWHfhpkDtd1RyHCrp8GzW6BnRCF6ufsGkzJMW+EOKppGHcA9t1F8Hm7FeJdCkFUt0dtnsMvraY5pGCEoQABCUBu3gJQn9YCBhDDRTxP00LCIGm6O4OGWFu5eZ59nWVDy4JbyTcl9bIe5HhhOd+p3GXckkbpneUbMKFWCkCtlC4rzolWMed27qrPits0kZxPlVL1F8iagnOGXcL5lmqF03dW0oItmqwHWZbhOZcy9pjkCy/LXHpKGpwkJYarGvkADN1KSWIpWQIvtet5rsEN1gB85GuoWUhZFYCo0efM3wXAQDhhTG6YTCfmojOYUSIZY1WJb4DZV5MUgCzo7DIfRf1oy0oIO59cgQhF+z56+vg4le3+sn+gnVBKJ/tboB3sPwCqh0CN0EP0e6DoATmjyK/v5EcjB42dx9HPO40enfEfgySWh1HR+ocAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+
+		<link href="https://www.vpass.info/2/info/css.css" rel="stylesheet">
+
+	</head>
+	<body>
+		
+		<?php require('readme.html'); ?>
+
+	</body>
+</html>

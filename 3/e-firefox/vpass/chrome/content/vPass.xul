@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://vPass/skin/style.css" type="text/css"?>
+<overlay id="vPass"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="vPass_button" label="vPass" class="toolbarbutton-1 chromeclass-toolbar-additional" oncommand="window.open('https://www.vpass.info/3/vpass.html?'+window.content.location.href);" />
+   </toolbarpalette>
+
+</overlay>

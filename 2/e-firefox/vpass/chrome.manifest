@@ -1,0 +1,5 @@
+content     vPass               chrome/content/
+skin        vPass  classic/1.0  chrome/skin/
+
+style chrome://global/content/customizeToolbar.xul chrome://vPass/skin/style.css
+overlay chrome://browser/content/browser.xul   chrome://vPass/content/vPass.xul

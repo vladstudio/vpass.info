@@ -1,0 +1,177 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: normal 13px/1.6em "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
+	background-color: #dedad3;
+	color: #65625f;
+	padding: 12px;
+	margin: 0;
+}
+p, h1, h2, h3, ul {
+	margin-bottom:1.5em;
+}
+ul {
+	padding-left: 1.5em;
+}
+h1, h2, h3 {
+	color: #bf6301;
+}
+h2 {
+	padding: 0 2em;
+}
+a {
+	color: #813a12;
+}
+a:active {
+	color: #111;
+}
+.light, .light * {
+	color: #908d88;
+}
+a.light:hover, .light a:hover {
+	color: #65625f;
+}
+.small, .small * {
+	font-size: 11px;
+}
+#container {
+	width: 80%;
+	min-width: 680px;
+	max-width: 920px;
+	margin: 0 auto;
+	border: 6px solid #d7d2ca;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background:#fff;
+	min-height: 40em;
+}
+#menu {
+	float: left;
+	width: 16em;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu a {
+	display: block;
+	margin: 2px 0;
+	text-decoration: none;
+	background:#f1eee9;
+	padding: 0.6em 1em;
+}
+#menu a.selected {
+	background: #bf6301;
+	color: #fff;
+}
+#content {
+	padding: 0 2em 1.2em 2em;
+	margin-left: 16em;
+}
+#footer, #footer * {
+	color: #908d88;
+}
+#footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+.center {
+	text-align: center;
+}
+hr {
+	height: 0;
+	background: transparent;
+	border: 0;
+	margin: 1.5em 0;
+	border-bottom: 1px dotted #a49f96;
+}
+.inline_nav {
+	text-align: center;
+	color: #908d88;
+}
+.hide {
+	display: none;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* forms */
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+textarea {
+	display: block;
+	width: 96%;
+	padding: 0 2%;
+	border: 1px solid #cdcccc;
+	border-radius: 0.25em;
+	min-height: 2em;
+	margin: 0 0 1em 0;
+	background: #efeeee;
+	font: normal 15px/1.8em "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
+	color: #2a2a29;
+}
+textarea {
+	padding: 0.5em 2%;
+	line-height: 1.5em;
+}
+input[type="submit"] {
+	display: inline-block;
+	padding: 0.25em 0.8em;
+	text-decoration: none;
+	border-radius: 0.25em;
+	border: none;
+	white-space: nowrap;
+	text-decoration: none;
+	color: #de6935;
+	background: #de6935;
+	color: #fff;
+	cursor: pointer;
+	margin: 0 0.33em 0.33em 0;
+	font: normal 13px/1.8em "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
+}
+input[type="submit"]:hover {
+	background: #bf6301;
+	color: #fff;
+}
+
+
+@media (max-width: 720px) {
+
+#container {
+	width: auto;
+	min-width: 120px;
+	max-width: 720px;
+	margin: 0;
+}
+#menu {
+	display: block;
+	float: none;
+	width: auto;
+}
+#content {
+	padding: 1.2em 2em;
+	margin: 0;
+}
+
+}
+

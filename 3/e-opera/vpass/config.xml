@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="vpass">
+	<name>vPass</name>
+	<description>Make your online accounts secure without having to remember hundreds of passwords.</description>
+	<author href="http://www.vladstudio.com/">Vlad Gerasimov</author>
+	<icon src="icon.png"/>
+</widget>

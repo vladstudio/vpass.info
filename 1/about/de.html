@@ -1,0 +1,269 @@
+ <html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>vPass: mehr Sicherheit, weniger mühsame Passwortverwaltung</title>
+
+	<!-- 57x57 icon -->
+	<link rel="apple-touch-icon-precomposed" href="../icon/png/icon-57x57.png" />
+	<!-- 32x32 icon -->
+	<link href="../icon/png/icon-32x32.png" rel="icon" type="image/x-icon" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div id="container">
+		<br>
+		<p class="center"><a href="https://www.vpass.info/"><img src="../icon/png/icon-57x57.png" height="57" width="57" alt="vPass logo"></a></p>
+		<h2 class="center">vPass: mehr Sicherheit, weniger mühsame Passwortverwaltung</h2>
+
+		<p class="center light">
+			<a href="https://www.vpass.info/about/">English</a>
+			&middot;
+			<a href="https://www.vpass.info/about/ru.html">Русский</a>
+			&middot;
+			<a href="https://www.vpass.info/about/de.html">Deutsch</a>
+		</p>
+
+		<ul id="menu">
+			<li><a href="#what" class="nav selected">Was ist vPass</a></li>
+			<li><a href="#why">Warum Sie es&nbsp;verwenden sollten</a></li>
+			<li><a href="#how">Wie vPass funktioniert</a></li>
+			<li><a href="#use">Wie man vPass verwendet</a></li>
+			<li><a href="#get">vPass holen</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#misc">Über, Kontakt, Feedback</a></li>
+
+		</ul>
+
+		<div id="content">
+
+
+			<div id="what" class="section">
+				<h3>Was ist vPass</h3>	
+
+				<p class="video-container"><iframe width="480" height="360" src="https://www.youtube.com/embed/FGwDFb6Y2zY" frameborder="0" allowfullscreen></iframe></p>
+
+				<p>vPass ist eine kleine Web-Anwendung, welche ich erstellt habe um&nbsp;mein eigenes Problem zu&nbsp;lösen - meine Passwörter sicher zu&nbsp;gestalten und gleichzeitig einfach zu&nbsp;verwalten. Passwörter sind die einzige Möglichkeit, mit welcher Sie sich im&nbsp;Internet identifizieren können. Bisher wurde nichts besseres erfunden. Allerdings ist es&nbsp;noch immer mühsam damit zu&nbsp;arbeiten:</p>
+
+				<ul>
+					<li>Menschen hassen Passwörter und das aus einem Grund;</li>
+					<li>Gute Passwörter sind schwer zu&nbsp;erraten - darum schwer zu&nbsp;merken;</li>
+					<li>Sie sollten wirklich ein anderes Passwort verwenden, für jeden Dienst, welchen Sie nutzen.</li>
+				</ul>
+
+				<p>
+					Zahlreiche Passwortverwaltungsanwendungen sind hier um&nbsp;&nbsp;zu&nbsp;helfen. Die Meisten davon sind an&nbsp;ein Betriebssystem gebunden. Den besten Ansatz, welchen ich bis heute gefunden habe, ist es&nbsp;ein einzelnes ("Master") Passwort zu&nbsp;haben und Account-spezifische Passwörter daraus zu&nbsp;generieren (den Accountname für die Verschlüsselung verwendet). Ich habe diese Idee von <a href="http://supergenpass.com/faq/">SuperGenPass</a> übernommen, fand jedoch die Benutzeroberfläche schwer zu&nbsp;bedienen. So&nbsp;wurde vPass geboren. 				</p>
+
+				<p class="inline_nav">
+					<a href="#why">Warum Sie es&nbsp;verwenden sollten &rarr;</a>
+				</p>
+			</div><!-- /what -->
+
+
+			<div id="why" class="section hide">
+				<h3>Warum Sie es&nbsp;verwenden sollten</h3>
+				<ul>
+					<li><p>
+						<b>Merken Sie sich nur ein Passwort</b><br>
+						Nur ein Passwort für alle Accounts zu&nbsp;verwenden ist unglaublich risikoreich. Einzigartige Passwörter für jeden Account zu&nbsp;behalten ist unmöglich. vPass ist die Lösung: Sie müssen sich lediglich das Master-Passwort merken und vPass generiert einzigartige Passwörter für die Dienste, die Sie nutzen. <a href="#how" class="nav">Mehr erfahren</a>.					</p></li>
+					<li><p>
+						<b>Standardmäßig sicher</b><br>
+						vPass generiert eine Kombination aus Nummern und Buchstaben (standardmäßig 12 Zeichen lang) welche praktisch unmöglich per Brute-Force zu&nbsp;knacken sind.					</p></li>
+					<li><p>
+						<b>Es bedarf nur einiger Tastenanschläge</b><br>
+						vPass ist sehr Tastatur-freundlich. Öffnen, das Master-Passwort eingeben, Enter, Strg-C, Strg-W, fertig!					</p></li>
+					<li><p>
+						<b>Ihr Passwort verlässt nicht Ihr Gerät</b><br>
+						Es gibt keinen Datentransfer zwischen Ihrem Browser und dem vPass Server. Es&nbsp;ist 100% clientseitig. Sie können sogar <a href="#get" class="nav"> vPass selbst hosten% für ultimative Sicherheit.					</p></li>
+					<li><p>
+						<b>Funktioniert auf jeder Plattform im&nbsp;Webbrowser</b><br>
+						Windows, Mac OS&nbsp;X, Linux, Android, iOS, Windows Phone, webOS und jedes zukünftige Betriebssystem auch.					</p></li>
+					<li><p>
+						<b>Funktioniert für jeden Dienst, nicht nur im&nbsp;Web</b><br>
+						Sie können nicht nur Passwörter für Webdienste generieren, sondern für alles, was als "Benutzername" bezeichnet werden kann. Ich nutze es&nbsp;sogar um&nbsp;Passwörter für Linux zu&nbsp;sichern, wie zum Beispiel "root", "www", usw.					</p></li>
+				</ul>
+
+				<p class="inline_nav">
+					<a href="#what">&larr; Was ist vPass</a>
+					&nbsp;&middot;&nbsp;
+					<a href="#how">Wie vPass funktioniert &rarr;</a>
+				</p>
+
+			</div><!-- /why -->
+
+
+
+
+			<div id="how" class="section hide">
+				<h3>Wie vPass funktioniert</h3>
+	
+				<p>vPass benötigt 2 Parameter: <b>Master-Passwort</b> und <b>Domain/Benutzername</b>. Wenn Sie vPass via Browser-Bookmarklet oder Erweiterung öffnen, ist die Domain automatisch eingestellt. Wenn z.B.  <i>https://accounts.google.com</i> in&nbsp;Ihrem Browser geöffnet ist, wird vPass <b>Domain</b> automatisch auf "google" einstellen. Alles was Sie tun müssen, ist Ihr Master-Passwort eingeben und Enter drücken.</p>
+	
+				<p>vPass vereinigt Master-Passwort und Domain in&nbsp;einer einzelnen Zeichenkette. Diese Zeichenkette wird dann in&nbsp;ein einzigartiges Passwort umgewandelt. Wenn Ihr Passwort zum Beispiel "snowflake" <i>(ein sehr schlechtes Passwort!)</i>, die Domain "google" und die Passwortlänge auf Standard (12) eingestellt ist, wird vPass "snowflakegoogle" in&nbsp;"UoBIAXtIVwDQ" umwandeln. Kopieren Sie es, schließen Sie vPass und fügen Sie das Passwort in&nbsp;das Anmeldeformular ein.</p>
+
+				<p class="inline_nav">
+					<a href="#why">&larr; Warum Sie es&nbsp;verwenden sollten</a>
+					&nbsp;&middot;&nbsp;
+					<a href="#use">Wie man vPass verwendet &rarr;</a>
+				</p>
+			</div><!-- /how -->
+
+
+			<div id="use" class="section hide">
+				<h3>Wie man vPass verwendet</h3>
+
+				<ul>
+					<li>Merken Sie sich Ihr Master-Passwort.</li>
+					<li>Wenn Sie sich auf einer Webseite registrieren, nutzen Sie vPass um&nbsp;ein einzigartiges Passwort zu&nbsp;generieren.</li>
+					<li>Wenn Sie sich das nächste Mal  anmelden, nutzen Sie vPass um&nbsp;das gleiche Passwort zu&nbsp;generieren.</li>
+				</ul>
+				<p>Anmerkung - vPass "speichert" Ihre Passwörter nicht, darum wird es&nbsp;auch nicht mit Passwörtern funktionieren, welche Sie bereits hatten, bevor Sie vPass verwendet haben. Für jeden Dienst (wie zum Beispiel Email), müssen Sie das Passwort enstsprechend dem ändern, was vPass generiert.</p>
+				<p>Ändern Sie nicht die Passwortlänge nachdem Sie bereits vPass nutzen.</p>
+
+				<p class="inline_nav">
+					<a href="#how">&larr; Wie vPass funktioniert</a>
+					&nbsp;&middot;&nbsp;
+					<a href="#get">vPass holen &rarr;</a>
+				</p>
+
+			</div>
+
+
+
+			<div id="get" class="section hide">
+				<h3>vPass holen</h3>
+				<ul>
+					<li><p>
+						<a href="https://www.vpass.info/"><b>Im Browser ansehen</b></a>
+					</p></li>
+					<li><p>
+						<a href="https://chrome.google.com/webstore/detail/vpass/abadcojegfgglajifpanpaccmmiefoid"><b>Holen Sie sich eine Google Chrome-Erweiterung</b></a>						
+					</p></li>
+					<li><p>
+						<a href="https://www.vpass.info/safari-extension/vpass.safariextz"><b>Holen Sie sich eine Safari-Erweiterung</b></a>
+					</p></li>
+					<li><p>
+						<a href="https://www.vpass.info/opera-extension/vpass.oex"><b>Holen Sie sich eine Opera-Erweiterung</b></a>
+					</p></li>
+					<li><p>
+						<b>Holen Sie sich ein Browser-Bookmarklet</b><br>
+						Ziehen Sie diesen Link &rarr; <a href="javascript:(function(){ window.open('https://www.vpass.info?'+document.URL, 'vPass') })();">vPass</a> &larr; in&nbsp;Ihre Lesezeichenleiste (unter der Adresszeile). Sie müssen es&nbsp;vielleicht aus dem Lesezeichenmenü einschalten. <i>Nicht für mobile Browser.</i>					</p></li>
+					<li><p>
+						<b>Verwendung auf einem iPhone/iPad</b><br>
+						Öffnen Sie <a href="https://www.vpass.info">vpass.info</a> in&nbsp;Ihrem mobilen Browser, tippen Sie den "Teilen" Button, tippen Sie "Zum Startbildschirm hinzufügen".					</p></li>
+					<li><p>
+						<b>Verwendung unter Android</b><br>
+						Öffnen Sie <a href="https://www.vpass.info">vpass.info</a> in&nbsp;Ihrem mobilen Browser, fügen Sie es&nbsp;&nbsp;zu&nbsp;Ihren Lesezeichen hinzu, öffnen Sie Ihre Lesezeichen, tippen und halten Sie vpass.info, tippen Sie "Zum Startbildschirm hinzufügen".					</p></li>
+					<li><p>
+						<b>Download und selbst hosten</b><br>
+						Downloaden Sie vPass als Sicherheitskopie, auch wenn Sie nicht planen es&nbsp;lokal zu&nbsp;nutzen. Rechtsklick und speichern unter: <a href="https://www.vpass.info/vpass.zip">vpass.zip</a>.					</p></li>
+				</ul>
+
+				<p class="inline_nav">
+					<a href="#use">&larr; Wie man vPass verwendet</a>
+					&nbsp;&middot;&nbsp;
+					<a href="#faq">FAQ &rarr;</a>
+				</p>
+
+			</div><!-- /get -->
+
+
+
+
+			<div id="faq" class="section hide">
+				<h3>FAQ</h3>
+				<ul>
+					<li><p>
+						<b>Warum sollte ich vPass verwenden und nicht LastPass/KeePass/1Password/RobotForm/etc.?</b><br>
+						Ich habe Sie alle getestet, ehrlich. LastPass war am&nbsp;besten, aber noch immer weit entfernt von perfekt. vPass ist auch nicht perfekt - es&nbsp;reflektiert meine Vision. Ich möchte Sie ermutigen es&nbsp;&nbsp;zu&nbsp;testen.					</p></li>
+	
+					<li><p>
+						<b>Warum sollte ich mir überhaupt Gedanken über sichere Passwörter machen?</b><br>
+						<ul>
+							<li><a href="http://lifehacker.com/5505400/how-id-hack-your-weak-passwords">Lifehacker - How I’d Hack Your Weak Passwords</a></li>
+							<li><a href="http://www.enterprisewizard.com/blog/weak-passwords-hacker-heaven/">Weak Passwords = Hacker Heaven</a></li>
+							<li><a href="http://www.zdnet.com/the-top-10-passwords-from-the-yahoo-hack-is-yours-one-of-them-7000000815/">The top 10 passwords from the Yahoo hack: Is yours one of them?</a></li>
+						</ul>
+					</p></li>
+					<li><p>
+						<b>Wie sicher ist vPass?</b><br>
+						Es ist so&nbsp;sicher wie Ihr Master-Passwort. Wenn Ihr Master-Passwort schwach ist, kann ein Hacker es&nbsp;erraten oder per Brute-Force knacken und so&nbsp;Zugang zu&nbsp;all Ihren Accounts erlangen. Glücklicherweise sind die generierten Passwörter wirklich stark (außer wenn Sie sie zu&nbsp;kurz machen) und da&nbsp;vPass noch nicht so&nbsp;beliebt ist, wird niemand darauf kommen, dass Sie es&nbsp;nutzen.					</p></li>
+					<li><p>
+						<b>Mein Passwort einem Webservice anzuvertrauen ist Wahnsinn!</b><br>
+						vPass Server senden Ihnen nur HTML-Code, einseitig. Ihr Passwort wird niemals an&nbsp;unsere Server übermittelt. Und sie können vPass immer <a href="#get" class="nav">selbst hosten</a>.					</p></li>
+					<li><p>
+						<b>Wie bekomme ich ein Passwort für alle Subdomains?</b><br>
+						Das wird automatisch für Sie erledigt. vPass ignoriert Subdomains genauso wie Top-Level-Domains und behält nur den brauchbaren Teil einer Domain. Zum Beispiel haben Sie bestimmt den gleichen Account auf amazon.fr und amazon.com - und vPass konvertiert beide Domains einfach zu&nbsp;"amazon".					</p></li>
+					<li><p>
+						<b>Wie denke ich mir ein starkes Master-Passwort aus?</b><br>
+						<ul>
+							<li><a href="http://windows.microsoft.com/en-us/windows-vista/Tips-for-creating-a-strong-password">Tips for creating a strong password</a></li>
+							<li><a href="http://www.productivity501.com/10-tips-for-creating-secure-passwords/253/">10 Tips for Creating Secure Passwords</a></li>
+							<li><a href="http://lifehacker.com/5876541/use-this-infographic-to-pick-a-good-strong-password">Lifehacker - Use This Infographic to Pick a Good, Strong Password</a></li>
+							<li><a href="http://support.google.com/accounts/bin/answer.py?hl=en&answer=32040">Google - Choosing a smart password</a></li>
+						</ul>
+					</p></li>
+					<li><p>
+						<b>Kann ich vPass.info trauen? Was passiert, wenn vPass.info offline ist?</b><br>
+						Das ist eine gute Frage und wenn Sie sich diese gestellt haben, sollten Sie genau jetzt <a href="#get" class="nav">eine lokale Kopie von vPass speichern</a>, nur für den Fall. Was den Server betrifft, gibt es&nbsp;keine Zugriffsprotokolle und wie ich bereits zuvor erwähnt habe, werden keine Daten durch Sie übermittelt.					</p></li>		
+				</ul>
+
+				<p class="inline_nav">
+					<a href="#get">&larr; vPass holen</a>
+					&nbsp;&middot;&nbsp;
+					<a href="#misc">Über, Kontakt, Feedback &rarr;</a>
+				</p>
+
+			</div>
+
+
+
+			<div id="misc" class="section hide">
+				<ul>
+					<li><p>
+						<b>Nutzungsbedingungen</b><br>
+						Ernsthaft, verwenden Sie es&nbsp;einfach :-) vPass darf kostenlos genutzt, modifiziert und weiterverbreitet werden, solange ein Link zu&nbsp;vPass.info mitgeliefert wird. Ich bin nicht verantwortlich für jegliche Schäden, welche eventuell durch die Nutzung von vPass entstehen. Verwendung auf eigene Gefahr! (Aber denken Sie daran - vPass nicht zu&nbsp;verwenden kann gefährlicher sein).					</p></li>
+					<li><p>
+						<b>Feedback und Diskussion</b><br>
+						Um über vPass zu&nbsp;diskutieren, nutzen Sie bitte <a href="https://www.vpass.userecho.com/">dieses Forum @ userecho.com</a>.					</p></li>
+					<li><p>
+						<b>Kontakt</b><br>
+						Bitte senden Sie Ihre Kommentare, Komplimente und Beschwerden an&nbsp;<a href="mailto:vladstudio@gmail.com">vladstudio@gmail.com</a>.					</p></li>
+					<li><p>
+						<b>Übersetzen Sie vPass in&nbsp;Ihre Sprache</b><br>
+						Wenn Sie vPass lieber in&nbsp;Ihrer Muttersprache nutzen wollen und es&nbsp;noch nicht übersetzt ist, dann melden Sie sich bitte <a href="http://www.s25n.com/account/signup/VHBe4soedpAz9S18AurKnoUZdMLEla0R">hier an</a>.					</li>
+					<li><p>
+						<b>Danksagungen</b><br>
+						Danke an&nbsp;die Macher von <a href="http://supergenpass.com">SuperGenPass</a> für Ihre Inspiration, <a href="http://www.movable-type.co.uk">Chris Veness</a> für die Verschlüsselungsfunktionen.					</p></li>
+					<li><p>
+						<b>Über mich</b><br>
+						Ich bin Vlad Gerasimov. Sie können mehr über mich erfahren auf <a href="http://www.vladstudio.com">Vladstudio.com</a>.					</p></li>
+				</ul>
+
+				<p class="inline_nav">
+					<a href="#faq">&larr; FAQ</a>
+				</p>
+
+			</div><!-- /misc -->
+
+			<hr>
+			<p class="center">
+				<form action="https://www.vsender.info/subscribe/" target="_blank">
+					<p><label for="vsender_email">Ihre E-Mail-Adresse: <input type="text" name="email" id="vsender_email"></label></p>
+					<p><input type="submit" value="E-Mail Newsletter abonnieren"></p>
+					<input type="hidden" name="sublist_token" value="oLjJypJFhE4DNp8crawbmjfFQ1dPdcdsNm2bCBHK6BeJRcM9d9bpjgW08ZFc2JuF">
+				</form>
+			</p>
+		</div><!-- /content -->
+
+
+</div><!-- /container -->
+
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>

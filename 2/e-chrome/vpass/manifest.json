@@ -1,0 +1,25 @@
+{
+"name": "vPass 2",
+"version": "2.1.0",
+"manifest_version": 2,
+"description": "Make your online accounts secure without having to remember hundreds of passwords. Visit https://www.vpass.info for more info.",
+
+"browser_action": 
+{
+"default_title": "vPass 2",
+"default_icon": "icon-32.png",
+"default_popup": "vpass.html"
+},
+
+"icons": 
+{ 
+"16": "icon-16.png",
+"48": "icon-48.png",
+"128": "icon-128.png" 
+},
+
+"permissions": 
+[
+"tabs", "http://*/*", "https://*/*"
+]
+}

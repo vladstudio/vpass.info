@@ -1,0 +1,281 @@
+<!-- 
+
+vPass: more secure, less painful password management
+v 1.1
+&copy; 2012-2013 Vlad Gerasimov
+vPass website: https://www.vpass.info
+Email me: vladstudio@gmail.com
+
+vPass is free to use, modify, re-distribute, as long as link to vPass.info is provided. I am not responsible for any damage you might experience using vPass. Use at your own risk! (But remember — not using vPass may be riskier).
+
+ -->
+<html manifest="https://www.vpass.info/1/vpass.appcache">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=280px, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <title>vPass</title>
+
+
+  <!-- 57x57 icon -->
+  <link rel="apple-touch-icon-precomposed" href="data:image/png;base64,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" />
+
+
+
+  <!-- 32x32 icon -->
+  <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFHUlEQVR4XsWVTWxc1RXHf+fe+97zfHhihwRTWtES7AQlaQoVbUIA4U1FFWjIpuJDVEkrqm6AVlXVhlVVFhWLiha1ywCqoi4qQfOhgJoQpUlIohgbAiqOUgi4VFVclzh2PDMez8x799S6kke2NF35g590N6N33v9/zv+8O/LRD3PEnbIpLtnnbVH6sRTFGJYD9R4yqr6ip+pT2d5GWf8ul3+U3xJ32bMkUkyr4BsKyvIgYGLB5UEbWmlOZvfIB4/njxRudg+mtSC8Mgi4nFC9kr7uVPX+rKHglRVDIWuAqvY7lKI2FZQVJWgqBacI6ll5gr7gUCWcJUIV4q/toetb3weFyvsnqB7/FUbaP+yWWJ/MQ63u6bllAyJwbXiANIXItdVfhgl4mLl+rSVQK5fx3oNKWwcGhcUe6dlO6ZF9xFvC2KldPISq4r1S/8+noOB6H6b4nd+S3P0T1LdqFx+BV5DVfay6dyfd9+3CzzxH14fvA4KIcvOOPRT2PEvcvSaYGjvxF5oZRHYuAg94RRWiO3bTPbs8YgyqnvEDL5B9dBiRhRnf9IuTiBi8eiqXhqinigCgaBRR2ngn3qcAFG7twxgbxAGSL/Ux2fREIuDBzUWgHiaHT3Pjk78GCEXRHTtoXDqMs/OWZtszJF/egKKho6nZjqb+McTYpYs0Pazq28S6B3Zhkw6AYPTyscOMv3cOa4SkNk7HvPjMXAQKNCc+YfTc30CFLM3Ib9pGM9XWnjYzcL13kXkf8p25Ns5nR3+HHT0LF17GD72E1QwTdwThdKZOlmUUblhLNvgyvPMScvlQMDKna1pOCLkw+cEAipL5lGT1DZjeh1pLk6ZK6atbw1YDjL1zlnwsdHYIXXmh5+s7uW3X90J8o+8NcfmvBxAReu7cyq27f0N3wVBMBCftJqAQWaFy4kVq45+FDlShcN93STPwHuLtT+FyuSAAzHb/R5IIjIAUv0LPD54jy1KscVx581XGDv2BrD4TDK954FFs7w6EQEvTqCpzx4qSi+Hfp4+CEgqLm7bSSD3NTInX3xWMgHD10jDmyjmcIdTWZ+P7ZP+LlD8doT45QXPwFTrrH/OvowdJKxU+/vM+ysNH8EGrdTAw73sGEgdTZ15DUbzPcLkOknueotFUSpu/GX4DGB86SS4CK4CCFaH+9itc+Om9vPuzHZQ6QjRMvvF73v7xt5k4+EsiA6ItPaDNPeCMYEbPc+3Di3T13h5cxhu+QeqfxuZygNKsTTN16k90W2nVOgOr8hImSDpCEglGoNgYIechKpi567hVo9rGgJEwBa4OnqLrtttDDLl1m5kpl/GZYqxh7N3zxNMjuLyw0Dy4WJhP4gQAkYXiLQMo4FlAbISJ2Q6bDz8BUUzSvZrki+tQPGCYOH+MDgumNcr/jxBo/5yCa/cOayGa/if/vTDATdvuD99yad161Cu161epD+6ns2hQFofSuopZgAESCxMDx2cN9Lc2NooiRt86Rs4JFsCzODw4r9r2zygycH1gP766l66eLwCESUydOUTJAoS6ReFV20YQMBYKCZzfvZFK3aNALhLWFA0uJyjAkkTQ3gFCEKSnBKszC4A1YauxAkvkoLUDbbFA3gk4FuJZGjy4sGAInweqistSKrOnaC0rSpZBllK1j601261jvYtYUeo1Zbqsx1yjoXvLE/T7jGKSE6xd/s4bNaU6pZVGU/c6Y2S4NuPvrlZ53kX0i5GCYXnwgHqtpk3OGMvP48gM/w+PTshQfOcR8wAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
+
+
+
+
+
+
+  <style type="text/css">
+    html, body, p, div, span {
+      font: normal 12px/18px "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      background: #dedad3;
+      background: -moz-radial-gradient(50% 5%, circle farthest-side, #edece9 0%, #cdc4b7 100%);
+      background: -webkit-radial-gradient(50% 5%, circle farthest-side, #edece9 0%,#cdc4b7 100%);
+      background: -o-radial-gradient(50% 5%, circle farthest-side, #edece9 0%,#cdc4b7 100%);
+      background: -ms-radial-gradient(50% 5%, circle farthest-side, #edece9 0%,#cdc4b7 100%);
+      background: radial-gradient(50% 5%, circle farthest-side, #edece9 0%,#cdc4b7 100%);
+      width: 100%;
+      height: 100%;
+    }
+    body {
+
+      color: #65625f;
+      padding: 12px 6px;
+      margin: 0;
+      min-width: 200px;
+      min-height: 300px;
+    }
+    #container {
+      min-width:240px;
+      max-width: 280px;
+      margin: 0 auto;
+      padding: 0;
+      width: expression((w = (document.documentElement.clientWidth || document.body.clientWidth) - 20) > 360 ? '360px' : (w > 260 ? 'auto' : '260px'));
+    }
+    #form {
+      display: block;
+      background: rgba(145, 140, 130, 0.12);
+      border-bottom: 1px solid rgba(145, 140, 130, 0.32);
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      padding: 6px;
+      margin: 0;
+      line-height: 0;
+    }
+    p {
+      position: relative;
+      margin: 0; 
+      padding: 0;
+    }
+
+    label {
+      position: absolute;
+      z-index: 9999;
+      text-align: right;
+      top: 10px;
+      right: 10px;
+    }
+    .text {
+      width: 100%;
+      background: #fff;
+      height: 64px;
+      padding: 12px 6px 0px 12px;
+      margin: 0 0 6px 0;
+      display: block;
+      border: 1px solid #b3aaa4;
+      font: normal 20px/24px "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
+      letter-spacing: 0;
+      color: #813a12;
+      -webkit-tap-highlight-color: #fed7ad;
+      -webkit-text-size-adjust: none;
+      *zoom: 1;
+    }
+    #submit {
+      width: 100%;
+      height: 64px;
+      padding: 10px 0;
+      margin: 0 0 0;
+      display: block;
+      border: 1px solid #b3aaa4;
+      font: bold 22px/30px "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
+      color: #813a12;
+      background-image: -moz-linear-gradient(top, #ffffff, #dedad3);
+      background-image: -ms-linear-gradient(top, #ffffff, #dedad3);
+      background-image: -o-linear-gradient(top, #ffffff, #dedad3);
+      background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#dedad3));
+      background-image: -webkit-linear-gradient(top, #ffffff, #dedad3);
+      background-image: linear-gradient(top, #ffffff, #dedad3);     
+      -webkit-box-shadow: inset -1px -1px 0px 0px rgba(255, 255, 255, 1);
+      box-shadow: inset -1px -1px 0px 0px rgba(255, 255, 255, 1);
+      *zoom: 1;
+    }
+    #submit:focus, #submit:active {
+      background-image: -moz-linear-gradient(top, #fed7ad, #f7ac6b);
+      background-image: -ms-linear-gradient(top, #fed7ad, #f7ac6b);
+      background-image: -o-linear-gradient(top, #fed7ad, #f7ac6b);
+      background-image: -webkit-gradient(linear, center top, center bottom, from(#fed7ad), to(#f7ac6b));
+      background-image: -webkit-linear-gradient(top, #fed7ad, #f7ac6b);
+      background-image: linear-gradient(top, #fed7ad, #f7ac6b);     
+      -webkit-box-shadow: inset -1px -1px 0px 0px rgba(252, 219, 190, 1);
+      box-shadow: inset -1px -1px 0px 0px rgba(252, 219, 190, 1);
+    }
+    .text:focus {
+      background: #fed7ad;
+      color: #bf6301;
+      outline:none;
+    }
+    #result {
+      padding: 12px;
+      font-size: 18px;
+    }
+    #result_box {
+      float: left;
+      width: 79.2%;
+    }
+    #submit_box {
+      float: right;
+      width: 19.2%;
+    }
+    #sep {
+      clear: both;
+      height: 1px;
+      background: #bba;
+      margin: 6px 0;
+    }
+    #icon_box {
+      text-align: center;
+    }
+    .center {
+      text-align: center;
+    }
+    .light, .light * {
+      color: #908d88;
+    }
+    .link {
+      border-bottom: 1px dotted #908d88;
+      cursor: pointer;
+    }
+    .link:hover {
+      color: #65625f;
+    }
+    .small, .small * {
+      font-size: 11px;
+    }
+    .cl {
+      clear: both;
+      height: 0;
+    }
+  </style>
+
+
+
+
+
+
+</head>
+<body><div id="container">
+
+
+
+
+
+
+  <form action="?" id="form" method="post" autocomplete="off">
+    
+    <p id="pass_box"><label><span id="t_master_password">master password</span> (<span class="link" id="t_master_password_show_hide">show</span>)</label>
+      <input id="pass" name="pass" type="password" class="text" autofocus="autofocus" autocomplete="off"></p>
+
+    <p id="domain_box"><label id="t_domain_username">domain or username</label>
+      <input id="domain" name="domain" type="text" class="text" autocorrect="off" autocapitalize="off" autocomplete="off"></p>
+
+    <p id="result_box"><input id="result" type="text" class="text" autocorrect="off" autocapitalize="off" autocomplete="off"></p>
+    <p id="submit_box"><input type="submit" id="submit" value="&#8626;"></p>
+    <p class="cl"></p>
+
+  <div class="center small">
+    <span id="t_length">Length</span>:&nbsp;<select name="len" id="len">
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12" selected="true">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+      <option value="32">32</option>
+    </select>
+  </div>
+
+  </form>
+
+  <div>&nbsp;</div>
+
+  <div class="center small">
+    <span class="link" id="t_what_why" target="_blank">What is vPass and why use it?</span>
+    &middot;
+    <span class="link" id="lang_box_link">Ïñţêrnätîōnál</span>
+  </div>
+  <div>&nbsp;</div>
+  <div id="lang_box" class="center small" style="display:none">
+    <span class="link" id="lang_en_link">English</span>
+    &middot;
+    <span class="link" id="lang_ru_link">Русский</span>
+    &middot;
+    <span class="link" id="lang_de_link">Deutsch</span>
+    <div>&nbsp;</div>
+  </div>
+
+
+  <!-- vPass icon @ page footer -->
+  <div id="icon_box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFHUlEQVR4XsWVTWxc1RXHf+fe+97zfHhihwRTWtES7AQlaQoVbUIA4U1FFWjIpuJDVEkrqm6AVlXVhlVVFhWLiha1ywCqoi4qQfOhgJoQpUlIohgbAiqOUgi4VFVclzh2PDMez8x799S6kke2NF35g590N6N33v9/zv+8O/LRD3PEnbIpLtnnbVH6sRTFGJYD9R4yqr6ip+pT2d5GWf8ul3+U3xJ32bMkUkyr4BsKyvIgYGLB5UEbWmlOZvfIB4/njxRudg+mtSC8Mgi4nFC9kr7uVPX+rKHglRVDIWuAqvY7lKI2FZQVJWgqBacI6ll5gr7gUCWcJUIV4q/toetb3weFyvsnqB7/FUbaP+yWWJ/MQ63u6bllAyJwbXiANIXItdVfhgl4mLl+rSVQK5fx3oNKWwcGhcUe6dlO6ZF9xFvC2KldPISq4r1S/8+noOB6H6b4nd+S3P0T1LdqFx+BV5DVfay6dyfd9+3CzzxH14fvA4KIcvOOPRT2PEvcvSaYGjvxF5oZRHYuAg94RRWiO3bTPbs8YgyqnvEDL5B9dBiRhRnf9IuTiBi8eiqXhqinigCgaBRR2ngn3qcAFG7twxgbxAGSL/Ux2fREIuDBzUWgHiaHT3Pjk78GCEXRHTtoXDqMs/OWZtszJF/egKKho6nZjqb+McTYpYs0Pazq28S6B3Zhkw6AYPTyscOMv3cOa4SkNk7HvPjMXAQKNCc+YfTc30CFLM3Ib9pGM9XWnjYzcL13kXkf8p25Ns5nR3+HHT0LF17GD72E1QwTdwThdKZOlmUUblhLNvgyvPMScvlQMDKna1pOCLkw+cEAipL5lGT1DZjeh1pLk6ZK6atbw1YDjL1zlnwsdHYIXXmh5+s7uW3X90J8o+8NcfmvBxAReu7cyq27f0N3wVBMBCftJqAQWaFy4kVq45+FDlShcN93STPwHuLtT+FyuSAAzHb/R5IIjIAUv0LPD54jy1KscVx581XGDv2BrD4TDK954FFs7w6EQEvTqCpzx4qSi+Hfp4+CEgqLm7bSSD3NTInX3xWMgHD10jDmyjmcIdTWZ+P7ZP+LlD8doT45QXPwFTrrH/OvowdJKxU+/vM+ysNH8EGrdTAw73sGEgdTZ15DUbzPcLkOknueotFUSpu/GX4DGB86SS4CK4CCFaH+9itc+Om9vPuzHZQ6QjRMvvF73v7xt5k4+EsiA6ItPaDNPeCMYEbPc+3Di3T13h5cxhu+QeqfxuZygNKsTTN16k90W2nVOgOr8hImSDpCEglGoNgYIechKpi567hVo9rGgJEwBa4OnqLrtttDDLl1m5kpl/GZYqxh7N3zxNMjuLyw0Dy4WJhP4gQAkYXiLQMo4FlAbISJ2Q6bDz8BUUzSvZrki+tQPGCYOH+MDgumNcr/jxBo/5yCa/cOayGa/if/vTDATdvuD99yad161Cu161epD+6ns2hQFofSuopZgAESCxMDx2cN9Lc2NooiRt86Rs4JFsCzODw4r9r2zygycH1gP766l66eLwCESUydOUTJAoS6ReFV20YQMBYKCZzfvZFK3aNALhLWFA0uJyjAkkTQ3gFCEKSnBKszC4A1YauxAkvkoLUDbbFA3gk4FuJZGjy4sGAInweqistSKrOnaC0rSpZBllK1j601261jvYtYUeo1Zbqsx1yjoXvLE/T7jGKSE6xd/s4bNaU6pZVGU/c6Y2S4NuPvrlZ53kX0i5GCYXnwgHqtpk3OGMvP48gM/w+PTshQfOcR8wAAAABJRU5ErkJggg==" alt="vpass"></div>
+
+  <div>&nbsp;</div>
+
+
+
+</div><!-- /container -->
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="vpass.js"></script>
+</body>
+</html>

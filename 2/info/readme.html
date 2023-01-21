@@ -1,0 +1,86 @@
+<h2>vPass is a web-based generator of secure passwords.</h2>
+
+<ul>
+<li>You really should have different passwords for web sites.</li>
+<li>Remembering unique password for each web site is impossible.</li>
+<li>Password managers are usually restricted to one platform.</li>
+</ul>
+
+<p>vPass takes your master password (f.e. <code>my_password</code>) and, optionally, current domain (f.e. <code>http://accounts.google.com</code> converts into <code>google</code>) and generates 12-letter mix of letters, numbers and symbols (f.e. <code>0EQu$MwEm?Qt</code>). <a href="http://www.youtube.com/watch?v=Wv8fapdiPCY">Watch 30 seconds video demo</a>.</p>
+
+<p>Now you can create unique secure password for any website, and you only have to remember one master password.</p>
+
+<p><strong>Your master password never leaves your device.</strong> vPass is 100% client-side, pure Javascript, no data is sent to server. It's just a webpage, so it works on Windows, Mac OS X, Linux, Android, iOS, Windows Phone, webOS, and any future OS too.</p>
+
+<ul>
+<li><a href="https://www.vpass.info/2/vpass.html">View in browser</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/vpass-2/nflchmhdffaacecceakebjfiiclbnean">Download Google Chrome extension</a></li>
+<li><a href="https://www.vpass.info/2/e-safari/vpass.safariextz">Download Safari extension</a></li>
+<li><a href="https://www.vpass.info/2/e-opera/vpass.oex">Download Opera extension</a></li>
+<li><a href="https://www.vpass.info/2/e-firefox/vpass.xpi">Download Firefox extension</a></li>
+<li><a href="https://github.com/vladstudio/vpass2">Source code @ Github</a></li>
+</ul>
+
+<p><strong>Bookmarklet</strong> <br />
+Drag this link → <a href="javascript:(function()
+{ window.open('https://www.vpass.info?'+document.URL, 'vPass') })();">vPass</a> ← into your browser's bookmarks bar (below address bar). You might need to turn it  on from Bookmarks menu. <em>Not for mobile browsers.</em></p>
+
+<p><strong>Use on iPhone/iPad</strong> <br />
+Open <a href="https://www.vpass.info/2/vpass.html">vPass</a> in your mobile browser, tap "Share" button, tap "Add to Home screen".</p>
+
+<p><strong>Use on Android</strong> <br />
+Open <a href="https://www.vpass.info/2/vpass.html">vPass</a> in your mobile browser, add it  to bookmarks, open bookmarks, tap and hold vpass.info, tap "Add to Home screen".</p>
+
+<p><strong>Download and self-host</strong> <br />
+Download vPass for backup, even if you do not plan to use it locally. Right-click and save as: <a href="https://www.vpass.info/2/vpass.zip">vpass.zip</a>.</p>
+
+<p>Experimental - mobile bookmarklet → <a href="#javascript:(function()
+{ window.open('https://www.vpass.info?'+document.URL, 'vPass') })();">vPass</a> ←</p>
+
+<hr />
+
+<ul>
+<li>When you use a browser extension or a bookmarklet, "domain" is pre-filled from a currently opened URL.</li>
+<li>Type your master password and hit <code>Enter</code> to generate unique password.</li>
+<li>Hit <code>Ctrl(Cmd,Alt) + Enter</code> to show/hide master password (to avoid typos).</li>
+<li>Chrome and Safari extensions will fill an input field on your web page automatically, if you focus on it before opening vPass.</li>
+</ul>
+
+<hr />
+
+<p><strong>Why use vPass, not LastPass/KeePass/1Password/RoboForm/etc?</strong> <br />
+I tried them all, honestly. LastPass was the best, but still far from perfect. vPass is not perfect too - it reflects my vision. I encourage you to give it  a try.</p>
+
+<p><strong>Why bother with secure passwords at all?</strong>  </p>
+
+<ul>
+<li><a href="http://lifehacker.com/5505400/how-id-hack-your-weak-passwords">Lifehacker - How I’d Hack Your Weak Passwords</a></li>
+<li><a href="http://www.enterprisewizard.com/blog/weak-passwords-hacker-heaven/">Weak Passwords = Hacker Heaven</a></li>
+<li><a href="http://www.zdnet.com/the-top-10-passwords-from-the-yahoo-hack-is-yours-one-of-them-7000000815/">The top 10 passwords from the Yahoo hack: Is yours one of them?</a></li>
+</ul>
+
+<p><strong>How safe is vPass?</strong> <br />
+It's as safe as your master password. And because vPass is not so popular, no one will guess you use it.</p>
+
+<p><strong>How do  I come up with strong master password?</strong>  </p>
+
+<ul>
+<li><a href="http://windows.microsoft.com/en-us/windows-vista/Tips-for-creating-a-strong-password">Tips for creating a strong password</a></li>
+<li><a href="http://www.productivity501.com/10-tips-for-creating-secure-passwords/253/">10 Tips for Creating Secure Passwords</a></li>
+<li><a href="http://lifehacker.com/5876541/use-this-infographic-to-pick-a-good-strong-password">Lifehacker - Use This Infographic to Pick a Good, Strong Password</a></li>
+<li><a href="http://support.google.com/accounts/bin/answer.py?hl=en&amp;answer=32040">Google - Choosing a smart password</a></li>
+</ul>
+
+<p><strong>What happens if vPass.info is down?</strong> <br />
+You should save <a href="https://www.vpass.info/2/vpass.zip">a local copy of vPass</a> right now, just in case. As for the server, there are no access logs, and as  I mentioned, no data is transmitted from you.</p>
+
+<hr />
+
+<p>I am Vlad Gerasimov. You can find out more about me  at <a href="http://www.vladstudio.com/">Vladstudio.com</a>. <br />
+Please send your comments, compliments and complaints to <a href="mailto:vladstudio@gmail.com">vladstudio@gmail.com</a>.</p>
+
+<p>vPass has been inspired by <a href="http://supergenpass.com/">SuperGenPass</a>.</p>
+
+<hr />
+
+<p><em>For users who need to keep using vPass v.1, it's here - <a href="https://www.vpass.info/1/">https://www.vpass.info/1/</a>. I recommend switching to v.3 although it means changing all your password (which is actually a good idea from time to time). The v.1 generator did not validate for including most required types of characters (lowercase, uppercase, digits, special), which caused problems on some sites.</em></p>
